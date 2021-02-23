@@ -1,0 +1,26 @@
+<?xml version="1.0" ?>
+<!--
+/**
+ * Izzi
+ *
+ * @category   Izzi
+ * @package    Izzi_CustomMenu
+ * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Izzi\CustomMenu\Api\MenuLinkManagementInterface"
+                type="Izzi\CustomMenu\Model\MenuLinkManagement" />
+
+    <type name="Magento\Theme\Block\Html\Topmenu">
+        <!-- Sort Order = -10 use for run default Menu -->
+        <plugin disabled="false"  sortOrder="-10"
+                name="Izzi_CustomMenu_Plugin_Magento_Theme_Block_Html_LeftTopmenu"
+                type="Izzi\CustomMenu\Plugin\Magento\Theme\Block\Html\LeftTopmenu"/>
+
+        <plugin disabled="false" sortOrder="10"
+                name="Izzi_CustomMenu_Plugin_Magento_Theme_Block_Html_RightTopmenu"
+                type="Izzi\CustomMenu\Plugin\Magento\Theme\Block\Html\RightTopmenu"/>
+    </type>
+
+</config>

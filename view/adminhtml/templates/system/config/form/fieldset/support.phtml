@@ -1,0 +1,38 @@
+<div style="border-top:1px solid #e3e3e3;border-bottom:1px solid #e3e3e3; margin-bottom:10px;padding:12px 0 12px 0;">
+	<p style="color:#EA7601;">
+		<strong>Custom Menu Links:</strong> v <?= /* @noEscape */ $block->getModuleVersion() ?>
+	</p>
+	<div style="margin-top:16px;">
+
+		<h3 style="margin-bottom:4px;">Add a custom link to your site's main navigation.</h3>
+		<ol style="margin-left:16px;">
+			<li>Uncheck <i>"Use system value"</i> for either the Left or Right-side Links section.</li>
+			<li>Click "Add Link".</li>
+			<li>Optionally, you can provide the sort order each menu item.</li>
+		</ol>
+
+		<h3 style="margin-bottom:4px;">For links to regular CMS pages</h3>
+		<ol style="margin-left:16px;">
+			<li>In the <b><u>Link Type</u></b> dropdown, select <i>"CMS Page"</i>.</li>
+			<li>In the <b><u>CMS Pages</u></b> dropdown, select the page you want to add.</li>
+			<li>In the <b><u>Text</u></b> column, enter the menu title for the page.</li>
+		</ol>
+
+		<h3 style="margin-bottom:4px;">Add Custom (Internal) Link</h3>
+		<i style="margin-bottom:6px;">Tip: This option can be used for linking to specific product pages, individual categories, etc.</i>
+		<ol style="margin-left:16px;">
+			<li>In the <b><u>Link Type</u></b> dropdown, select <i>"Internal Custom Link"</i>.</li>
+			<li>In the <b><u>Text</u></b> column, enter the menu title for the page.</li>
+			<li>In the <b><u>Url</u></b> column, enter the url to the page (DON'T include the actual site url but DO include <i>".html"</i> at the end).</li>
+		</ol>
+
+		<h3 style="margin-bottom:4px;">Add Custom (External) Link</h3>
+		<i style="margin-bottom:6px;">Tip: This option can be used for linking to other websites like your Facebook page.</i>
+		<ol style="margin-left:16px;">
+			<li>In the <b><u>Link Type</u></b> dropdown, select <i>"External Custom Link"</i>.</li>
+			<li>In the <b><u>Text</u></b> column, enter the menu title for the link.</li>
+			<li>In the <b><u>Url</u></b> column, enter the full url to the page as you would type it in the address bar.</li>
+		</ol>
+
+	</div>
+</div>
