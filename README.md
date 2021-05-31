@@ -26,7 +26,7 @@ mkdir -p app/code/Izzi && cd app/code/Izzi && git clone git@github.com:workwithi
 Run the following series of command from SSH console of your server to install the extension:
 - Enable: `php bin/magento module:enable Izzi_CustomMenu  --clear-static-content`
 - Setup: `php bin/magento setup:upgrade`.
-- Compile: [setup di compile](https://devdocs.magento.com/guides/v2.3/config-guide/cli/config-cli-subcommands-compiler.html) `php bin/magento setup:di:comple`.
+- Compile: [setup di compile](https://devdocs.magento.com/guides/v2.3/config-guide/cli/config-cli-subcommands-compiler.html) `php bin/magento setup:di:compile`.
 - Deploy: [static content deploy](https://devdocs.magento.com/guides/v2.3/config-guide/cli/config-cli-subcommands-static-view.html) `bin/magento setup:static-content:deploy`
 
 
